@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='style/layout.css')}}">
+</head>
+<body style="background-color:#f4bfc7;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Lumière</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	     <span class="navbar-toggler-icon"></span>
+	 </button>
+         <div class="collapse navbar-collapse" id="navbarNav">
+             <ul class="navbar-nav">
+	         <li class="nav-item active">
+                     <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+		</li>
+		<li class="nav-item">
+		    <a class="nav-link" href="\red">Red</a>
+		</li>
+		<li class="nav-item">
+		    <a class="nav-link" href="\funcionalidades">Funcionalidades</a>
+		</li>
+        <li class="nav-item">
+            <a class="nav-link" href="\tutorial">Tutorial</a>
+        </li>
+		<li class="nav-item">
+		    <a class="nav-link" href="\recom">Recomendaciones</a>
+		</li>
+       
+	    </ul>
+        </div>
+    </nav>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <center>
+    <div class="content_base">
+        <h1>Tutoriales</h1>
+        <h2>A continuación te presentamos un de tutorial que hicimos para ir explicando las funcionalidades básicas de nuestro centro multimedia.</h2>
+        <h1 style="color:#8AF5F5;">Tutorial hecho por Sandra Susana Pérez Gutiérrez</h1>
+        <iframe width="1060" height="815" src="https://www.youtube.com/embed/56ueyXiHzIA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+    </div>
+        <h1 style="color:#976d73;">Breve explicación de funcionalidades básicas</h1>
+            <div class="card-group">
+              <div class="card">
+                <img class="card-img-top" src="{{url_for('static', filename='carrusel_home/camara.jpg')}}" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Tomar fotos y almacenarlas en tu computadora directamente</h5>
+                    <p class="card-text">Puedes almacenar fotos en tu computadora directamente tomadas desde tu celular siempre y cuando cuentes con la aplicación IP Webcam.</p>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="{{url_for('static', filename='carrusel_home/camara (2).jpg')}}" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Ver contenido de USB</h5>
+                    <p class="card-text">El centro multimedia detecta cuando se introdujo una memoria y te pregunta si deseas ver su contenido.</p>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="{{url_for('static', filename='carrusel_home/leer.jpg')}}" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Descargar libros gratis</h5>
+                    <p class="card-text">Puedes descargar libros gratis en la sección de funcionalidades</p>
+                        </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="{{url_for('static', filename='carrusel_home/camara (3).jpg')}}" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Ver películas en Netflix</h5>
+                    <p class="card-text">Puedes ver tus películas favoritas y ver Netflix</p>
+                        </div>
+              </div>
+               <div class="card">
+                <img class="card-img-top" src="{{url_for('static', filename='carrusel_home/perro.jpg')}}" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Ver tus vídeos favoritos en Youtube</h5>
+                    <p class="card-text">Puedes hacer busqueda de vídeos desde el centro multimedia</p>
+                        </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="{{url_for('static', filename='carrusel_home/baila.jpg')}}" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Escuchar música en Spotify</h5>
+                    <p class="card-text">Puedes escuchar tu música favorita en Spotify</p>
+                        </div>
+              </div>
+            <div class="card">
+                <img class="card-img-top" src="{{url_for('static', filename='carrusel_home/chica.jpg')}}" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Conocer nuevas series, películas y música</h5>
+                    <p class="card-text">Lumière pone a tu disposición recomendaciones de series que puedes darle click al instante y verlas</p>
+                        </div>
+              </div>
+            </div>
+
+
+        </center>
+
+     {% block content %}
+    {% endblock %}
+
+</body>
+</html>

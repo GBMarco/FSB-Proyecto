@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body style="background-color:#5d9b9b;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Lumière</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	     <span class="navbar-toggler-icon"></span>
+	 </button>
+         <div class="collapse navbar-collapse" id="navbarNav">
+             <ul class="navbar-nav">
+	         <li class="nav-item active">
+                     <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+		</li>
+		<li class="nav-item">
+		    <a class="nav-link" href="\red">Red</a>
+		</li>
+		<li class="nav-item">
+		    <a class="nav-link" href="\funcionalidades">Funcionalidades</a>
+		</li>
+        <li class="nav-item">
+            <a class="nav-link" href="\tutorial">Tutorial</a>
+        </li>
+		<li class="nav-item">
+		    <a class="nav-link" href="\recom">Recomendaciones</a>
+		</li>
+        
+	    </ul>
+        </div>
+    </nav>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <center>
+        <h1 style="color:#cdd63b;">Ciencia Ficción</h1>
+            <div class="card-group">
+              <div class="card">
+                <img class="card-img-top" src="{{url_for('static', filename='carrusel_home/yo,robot.jpg')}}" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Yo, robot</h5>
+                    <p class="card-text">Yo, Robot es una novela creada a base de cuentos cortos de ciencia ficción concatenados del escritor estadounidense Isaac Asimov. De este libro surgen las 3 leyes de la robótica.</p>
+                    <a href="\yo_robot" class="btn btn-primary">Leer libro</a>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="{{url_for('static', filename='imagenes/lenguas.jpg')}}" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Julio Verne- Veinte mil lenguas de viaje submarino</h5>
+                    <p class="card-text">Veinte mil leguas de viaje submarino es una de las obras literarias más conocidas del escritor francés Julio Verne.</p>
+                    <a href="\lenguas" href="" class="btn btn-primary">Leer libro</a>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="{{url_for('static', filename='imagenes/centro.jpg')}}" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Julio Verne- Viaje al centro de la tierra</h5>
+                    <p class="card-text">Viaje al centro de la Tierra (Voyage au centre de la Terre) es una novela de Julio Verne, publicada el 25 de noviembre de 1864; la cual trata de la expedición de un profesor de mineralogía, Otto Lidenbrock, su sobrino Axel y un guía llamado Hans al interior de la Tierra.</p>
+                    <a href="\viaje" class="btn btn-primary">Leer libro</a>
+                        </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="{{url_for('static', filename='imagenes/luna.jpg')}}" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Julio Verne- De la Tierra a la Luna </h5>
+                    <p class="card-text">De la Tierra a la Luna es una novela «científica» y «satírica» del escritor Julio Verne, publicada en el "Journal des débats politiques et littéraires" desde el 14 de septiembre hasta el 14 de octubre de 1865, y como un solo volumen el 25 de octubre de ese mismo año.</p>
+                    <a href="\luna" class="btn btn-primary">Leer libro</a>
+                        </div>
+              </div>
+            </div>
+
+            <h1 style="color:#cdd63b;">Teología</h1>
+            <div class="card-group">
+              <div class="card">
+                <img class="card-img-top" src="{{url_for('static', filename='imagenes/Papa.jpeg')}}" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Fe y razón</h5>
+                    <p class="card-text">Escrito de Juan Pablo II que habla de la relación entre la fe y la razón en la vida laica.</p>
+                    <a href="\fe" class="btn btn-primary">Leer libro</a>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="{{url_for('static', filename='imagenes/antro.jpg')}}" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Antropología teologica</h5>
+                    <p class="card-text">La Antropología teológica es la parte de la Teología que tiene a la per- sona humana como objeto principal de estudio. No pocas veces ha sido denominada también como la Teología del hombre. Busca, por tanto, alcanzar una noción completa del hombre a la luz de la enseñanza que la revelación cristiana contiene sobre él.</p>
+                    <a href="\antro" href="" class="btn btn-primary">Leer libro</a>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="{{url_for('static', filename='imagenes/P.jpg')}}" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Pneumatología</h5>
+                    <p class="card-text">Rama de la Teologí­a católica que estudia primordialmente el misterio de la Tercera Persona de la Stma. Trinidad, es decir del Espí­ritu Santo (Pneuma agion).Abarca la definición, en lo posible, de su naturaleza, de su procedencia, de su relación con las otras dos personas, de su misión en la Iglesia, de las atribuciones que le hacemos los hombres.</p>
+                    <a href="\pneum" class="btn btn-primary">Leer libro</a>
+                    <a href="\pneu" class="btn btn-primary">Escrito de mi diplomado</a>
+                        </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="{{url_for('static', filename='imagenes/teo.jpg')}}" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Teología Biblíca</h5>
+                    <p class="card-text">La teología es la disciplina que estudia todo lo relacionado acerca de Dios, tanto su palabra como sus hechos y su legado. Aunque su significado es el estudio de la naturaleza de Dios y de sus elementos, características, etc. en la práctica se amplía a todos los aspectos de la religión en general.</p>
+                    <a href="\bibli" class="btn btn-primary">Leer libro</a>
+                        </div>
+              </div>
+            </div>
+
+            <h1 style="color:#cdd63b;">Filosofía</h1>
+            <div class="card-group">
+              <div class="card">
+                <img class="card-img-top" src="{{url_for('static', filename='imagenes/sein.png')}}" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Ser y tiempo</h5>
+                    <p class="card-text">Escrito de filosofía existencialista que nos invita a reflexionar sobre nuestra forma de vivir el verbo ser.</p>
+                    <a href="\sein" class="btn btn-primary">Leer libro</a>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="{{url_for('static', filename='imagenes/ser.jpg')}}" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">El ser y la nada</h5>
+                    <p class="card-text">El ser es nada, no existe un algo que lo defina en el presente por lo que estamos condenados a ser libres y sobre esa libertad nos definimos.</p>
+                    <a href="\ser" href="" class="btn btn-primary">Leer libro</a>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="{{url_for('static', filename='imagenes/criti.jpg')}}" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Crítica a la razón pura</h5>
+                    <p class="card-text">Escrito por Kant, habla sobre nuestra forma de razonamiento y comprensión de nuestro entorno</p>
+                    <a href="\critica" class="btn btn-primary">Leer libro</a>
+                        </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="{{url_for('static', filename='imagenes/hana.jpg')}}" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Eichmann en Jerúsalen</h5>
+                    <p class="card-text">Hannah Arendt, filosofa judía alemana, analiza a fondo el origen de los crímenes de odios cometidos en la segunda guerra mundial y encunetra que los nazis no son el origen del problema sino que estos problemas se originaron por la banalidad del mal.</p>
+                    <a href="\bana" class="btn btn-primary">Leer libro</a>
+                        </div>
+              </div>
+            </div>          
+            
+        </center>
+
+     {% block content %}
+    {% endblock %}
+
+</body>
+</html>

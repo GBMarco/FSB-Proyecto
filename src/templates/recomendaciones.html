@@ -1,0 +1,243 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='style/layout.css')}}">
+</head>
+<body style="background-color:#5d9b9b;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Lumière</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	     <span class="navbar-toggler-icon"></span>
+	 </button>
+         <div class="collapse navbar-collapse" id="navbarNav">
+             <ul class="navbar-nav">
+	         <li class="nav-item active">
+                     <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+		</li>
+		<li class="nav-item">
+		    <a class="nav-link" href="\red">Red</a>
+		</li>
+		<li class="nav-item">
+		    <a class="nav-link" href="\funcionalidades">Funcionalidades</a>
+		</li>
+        <li class="nav-item">
+            <a class="nav-link" href="\tutorial">Tutorial</a>
+        </li>
+		<li class="nav-item">
+		    <a class="nav-link" href="\recom">Recomendaciones</a>
+		</li>
+        
+	    </ul>
+        </div>
+    </nav>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <center>
+        <h1 style="color:#cdd63b;">Recomendaciones</h1>
+        <h2 >Recomendaciones de libros</h2>
+            <div class="card-group">
+              <div class="card">
+                <img class="card-img-top" src="{{url_for('static', filename='carrusel_home/yo,robot.jpg')}}" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Yo, robot</h5>
+                    <p class="card-text">Yo, Robot es una novela creada a base de cuentos cortos de ciencia ficción concatenados del escritor estadounidense Isaac Asimov. De este libro surgen las 3 leyes de la robótica.</p>
+                    <a href="\yo_robot" class="btn btn-primary">Leer libro</a>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="{{url_for('static', filename='carrusel_home/eldiablo.jpg')}}" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">El diablo de los números</h5>
+                    <p class="card-text">Es un libro de cuentos para niños y jóvenes adultos que explora las matemáticas escrito en 1997 en alemán por Hans Magnus Enzensberger.</p>
+                    <a href="\diablo" href="" class="btn btn-primary">Leer libro</a>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="{{url_for('static', filename='carrusel_home/losmiserables.jpg')}}" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Los Miserables</h5>
+                    <p class="card-text">Los miserables es una novela del poeta y escritor francés Victor Hugo publicada en 1862, considerada como una de las obras más importantes del siglo XIX.</p>
+                    <a href="\miserables" class="btn btn-primary">Leer libro</a>
+                        </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="{{url_for('static', filename='carrusel_home/donquijote.jpeg')}}" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Don Quijote de la Mancha</h5>
+                    <p class="card-text">El ingenioso hidalgo don Quijote de la Mancha narra las aventuras de Alonso Quijano, un hidalgo pobre que de tanto leer novelas de caballería acaba enloqueciendo y creyendo ser un caballero andante, nombrándose a sí mismo como don Quijote de la Mancha.</p>
+                    <a href="\quijote" class="btn btn-primary">Leer libro</a>
+                        </div>
+              </div>
+            </div>
+            <h2 >Recomendaciones de vídeos de youtube para los peques</h2>
+            <div class="card-group">
+              <div class="card">
+                <img class="card-img-top" src="{{url_for('static', filename='imagenes/historias.jpg')}}" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Historias Horribles</h5>
+                    <p class="card-text">Serie de comedia que narra los episodios más irónicos y bizarros de la historia.</p>
+                    <p class="card-text">Episodios:</p>
+                    <a href="https://youtu.be/Ug02T6Tmi_Q" class="btn btn-primary">Belleza en la época Georgiana</a>
+                    <a href="https://youtu.be/t1UOozSdkqc" class="btn btn-primary">Retratos indecorosos en la edad media y en el siglo 18</a>
+                    <a href="https://youtu.be/jkKCGhpd9Lc" class="btn btn-primary">Retrato de la reina Isabel</a>
+                    <a href="https://youtu.be/azOy1EixtuM" class="btn btn-primary">Dentista en la época Georgiana</a>
+                    <a href="https://youtu.be/3C4EuTtnwpE" class="btn btn-primary">La reina Isabel busca pareja</a>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="{{url_for('static', filename='imagenes/mini.jpg')}}" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Los mini Einsteins</h5>
+                    <p class="card-text">Es una serie infantil que invita a los niños a conocer arte y música clásica.</p>
+                    <p class="card-text">Episodios:</p>
+                    <a href="https://youtu.be/1qCOV11ojxw" href="" class="btn btn-primary">Incursionando en las pinturas de Van Gogh</a>
+                    <a href="https://youtu.be/m7dTag9pcAU" href="" class="btn btn-primary">Incursionando en los  de Leonardo Da Vinci</a>
+                    <a href="https://youtu.be/wlOEKkH4kFA" href="" class="btn btn-primary">Incursionando en la música de Felix Mendelsohn</a>
+                    <a href="https://youtu.be/kKOj-VdYh64" href="" class="btn btn-primary">Incursionando en la música de Giuseppe Verdi</a>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="{{url_for('static', filename='imagenes/back.jpg')}}" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Backyardigans</h5>
+                    <p class="card-text">Un grupo de amigos usan su imaginación para viajar a lugares de fantasía, creando aventuras fascinantes en su patio trasero.</p>
+                     <p class="card-text">Episodios:</p>
+                    <a href="https://youtu.be/HjXiymnz4C0" class="btn btn-primary">Who Goes There</a>
+                    <a href="https://youtu.be/fBtt1yiQBjk" class="btn btn-primary">La leyenda de las Hermanas Volcín</a>
+                    <a href="https://youtu.be/lUOqkhXGDeQ" class="btn btn-primary">Schiffbrüchig</a>
+                    <a href="https://youtu.be/Zgm2Ci57DRo" class="btn btn-primary">Der turm der macht</a>
+                        </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="{{url_for('static', filename='imagenes/funkel.jpg')}}" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Flunkeblunk</h5>
+                    <p class="card-text">Canal para niños que enseña vocabulario en alemán.</p>
+                     <p class="card-text">Episodios:</p>
+                    <a href="https://youtu.be/cfPnSzEH-d4" class="btn btn-primary">Funkel el caballero</a>
+                    <a href="https://youtu.be/M0asto2ZOaY" class="btn btn-primary">Limpiarse los dientes</a>
+                    <a href="https://youtu.be/ZrXuEm-giIU" class="btn btn-primary">En la obra con Flunk</a>
+                    <a href="https://youtu.be/wKqGPXs75H8" class="btn btn-primary">Aprendiendo las frutas</a>
+                    <a href="https://youtu.be/Y6pytmzwvvI" class="btn btn-primary">Funkel y el cofre pirata</a>
+                    <a href="https://youtu.be/gCzfTvBi8D0" class="btn btn-primary">En la granja con Flunk</a>
+                    <a href="https://youtu.be/Xja_wxX-zD0" class="btn btn-primary">Navidad con Funkel</a>
+                    <a href="https://youtu.be/GvwwLGCCOJ4" class="btn btn-primary">Opuestos</a>
+                        </div>
+              </div>
+            </div>
+
+            <h2 >Recomendaciones de música</h2>
+            <div class="card-group">
+              <div class="card">
+                <img class="card-img-top" src="{{url_for('static', filename='imagenes/cro.jpg')}}" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Cro</h5>
+                    <p class="card-text">Conocido como Cro, artista de pop-rap, productor musical, compositor, diseñador y cineasta alemán. Su pseudónimo se deriva de la abreviatura de su primer nombre (Carlo). Describe su música como una mezcla de rap y pop, que abrevia con el término "Raop". Su marca registrada es una máscara de panda detrás de la cual esconde su rostro.</p>
+                    
+                    <a href="https://youtu.be/u2pySXCmwpc" class="btn btn-primary">Einmal um die Welt</a>
+                    <a href="https://youtu.be/8WQMBv2deYQ" class="btn btn-primary">Traum</a>
+                    <a href="https://youtu.be/boE7wXPtcpc" class="btn btn-primary">DEIN SONG</a>
+                    <a href="https://youtu.be/PySC3RGhZJU" class="btn btn-primary">Bad Chick </a>
+                    <a href="https://youtu.be/OWkucIYExkU" class="btn btn-primary">Unendlichkeit</a>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="{{url_for('static', filename='imagenes/Indila.png')}}" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Indila</h5>
+                    <p class="card-text">Adila Sedraia, ​ más conocida por su nombre artístico Indila, es una cantante y compositora francesa. Entró en el mundo del espectáculo gracias a sus múltiples colaboraciones con artistas reconocidos de género rap, entre los que se cuentan a OGB, Rohff, Soprano, TLF, Nessbeal, L'Algérino, DJ Abdel y Youssoupha.</p>
+                    
+                    <a href="https://youtu.be/vtNJMAyeP0s" href="" class="btn btn-primary">Tourner Dans Le Vide</a>
+                    <a href="https://youtu.be/K5KAc5CoCuk" href="" class="btn btn-primary">Dernière Danse</a>
+                    <a href="https://youtu.be/DF3XjEhJ40Y" href="" class="btn btn-primary">Love Story</a>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="{{url_for('static', filename='imagenes/max.jpg')}}" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Max Giesinger</h5>
+                    <p class="card-text">Cantante de pop alemán.</p>
+                    <a href="https://youtu.be/5PST7Ld4wWU" class="btn btn-primary">Wenn sie tanzt</a>
+                    <a href="https://youtu.be/dkqH7n2G7Rw" class="btn btn-primary"> Wenn ich leiser bin </a>
+                    <a href="https://youtu.be/uC08L4xxjNM" class="btn btn-primary">80 Millionen</a>
+                    <a href="https://youtu.be/NfHrvd8uADs" class="btn btn-primary">Irgendwann ist jetz</a>
+                        </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="{{url_for('static', filename='imagenes/aurora.jpg')}}" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Aurora</h5>
+                    <p class="card-text">Aurora Aksnes, conocida simplemente como AURORA, es una cantautora noruega. Inició su carrera en 2012 con una serie de sencillos independientes que sirvieron para desarrollar su propuesta artística.</p>
+                    <a href="https://youtu.be/7YDkrJaiCrw" class="btn btn-primary">Exist For Love</a>
+                    <a href="https://youtu.be/d_HlPboLRL8" class="btn btn-primary">Runaway</a>
+                    <a href="https://youtu.be/K17df81RL9Y" class="btn btn-primary">Cure For Me</a>
+                    <a href="https://youtu.be/3DIT8Y3LC6M" class="btn btn-primary">Animal</a>
+                    <a href="https://youtu.be/_Mc_OM5oNA8" class="btn btn-primary">The Seed</a>
+                        </div>
+              </div>
+            </div>
+
+            <h2 >Recomendaciones de documentales en Youtube</h2>
+            <div class="card-group">
+              <div class="card">
+                <img class="card-img-top" src="{{url_for('static', filename='imagenes/faraona.jpg')}}" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Faraonas</h5>
+                    <p class="card-text">Conoce la historia de las mujeres más poderosas de Egipto.</p>
+                    
+                    <a href="https://youtu.be/fmkal-ZoMj4" class="btn btn-primary">Faraonas</a>
+                    <a href="https://youtu.be/_l3FSaSD7hc" class="btn btn-primary">Cleopatra</a>
+                    <a href="https://youtu.be/uXtvvGs5utg" class="btn btn-primary">Nefertari: La Misteriosa Reina de Egipto</a>
+                    <a href="https://youtu.be/nSP6l97LSS4" class="btn btn-primary">La tumba de Nefertari</a>
+                    <a href="https://youtu.be/3VsfescV7ag" class="btn btn-primary">Cosmología egipcia</a>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="{{url_for('static', filename='imagenes/boudica.jpg')}}" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Boudica</h5>
+                    <p class="card-text">Boudica fue una reina guerrera de los icenos, que acaudilló a varias tribus britanas, incluyendo a sus vecinos los trinovantes, durante el mayor levantamiento en Britania contra la ocupación romana, entre los años 60 del siglo I, durante el reinado del emperador Nerón.</p>
+                    
+                    <a href="https://youtu.be/zYKKuCl9aMw" href="" class="btn btn-primary">Boudica</a>
+                    <a href="https://youtu.be/1GkaEWch6Yk" href="" class="btn btn-primary">Los celtas</a>
+                    <a href="https://youtu.be/y61OOyGtDIA" href="" class="btn btn-primary">Celtas y los romanos: La lucha por las Galias (parte 1)</a>
+                    <a href="https://youtu.be/E1NYSCd0kC4" href="" class="btn btn-primary">Celtas y los romanos: La lucha por las Galias (parte 2)</a>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="{{url_for('static', filename='imagenes/meso.jpg')}}" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Culturas Mesoamericanas</h5>
+                    <p class="card-text">Conoce el origen y declive de algunas culturas Mesoamericanas.</p>
+                    <a href="https://youtu.be/nXByzO5Dcik" class="btn btn-primary">El Alma de México 01 Amanecer en Mesoamérica (por Carlos Fuentes)</a>
+                    <a href="https://youtu.be/dJODzXVw_BA" class="btn btn-primary">El Alma de México 02 Paisajes de Pirámides (por Carlos Fuentes)</a>
+                    <a href="https://youtu.be/bjgzD4THOfM" class="btn btn-primary">Los Olmecas La primera civilización</a>
+                    <a href="https://youtu.be/0vY-IVJFRJc" class="btn btn-primary">La caída del imperio azteca</a>
+                        </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="{{url_for('static', filename='imagenes/roma.jpg')}}" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Imperio Romano</h5>
+                    <p class="card-text">Conoce un poco más del imperio romano, imperio que ha influenciado ,en mayor o menor parte, a todas las culturas del planeta.</p>
+                    <a href="https://youtu.be/UNesX0adiCU" class="btn btn-primary">Roma después de la muerte de Julio César</a>
+                    <a href="https://youtu.be/yU_vPQClUXY" class="btn btn-primary">Calígula</a>
+                    <a href="https://youtu.be/_YBAegH891A" class="btn btn-primary">Pompeya (episodio 1)</a>
+                    <a href="https://youtu.be/6lDflRCeePU" class="btn btn-primary">Pompeya (episodio 2)</a>
+                    <a href="https://youtu.be/iCSF5IRKlPI" class="btn btn-primary">Pompeya (episodio 3)</a>
+                    <a href="https://youtu.be/J30JVMxqthg" class="btn btn-primary">Los emperadores romanos</a>
+                        </div>
+              </div>
+            </div>
+
+
+        </center>
+
+     {% block content %}
+    {% endblock %}
+
+</body>
+</html>
