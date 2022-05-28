@@ -1,6 +1,6 @@
 # FSB-Proyecto
 
-Proyecto final de Funadmaentos de Sistemas Embebidos 2022-2
+Proyecto final de Fundamentos de Sistemas Embebidos 2022-2
 
 | Member                         |
 | ------------------------------ |
